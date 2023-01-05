@@ -1,1 +1,9 @@
-<mat-progress-bar mode="determinate" value="40"></mat-progress-bar>
+<div class="container">
+  <div *ngFor="let download of downloads$ | async">
+    <span>{{ download.name }}</span>
+    <mat-progress-bar
+      mode="determinate"
+      [value]="download.progress"
+    ></mat-progress-bar>
+  </div>
+</div>
