@@ -9,9 +9,15 @@ import { MatMenuModule } from '@angular/material/menu';
 import { MatProgressBarModule } from '@angular/material/progress-bar';
 import { ProgressTestComponent } from './progress-test/progress-test.component';
 import { SubmenuComponent } from './submenu/submenu.component';
+import { HomeComponent } from './home/home.component';
 
 @NgModule({
-  declarations: [AppComponent, ProgressTestComponent, SubmenuComponent],
+  declarations: [
+    AppComponent,
+    ProgressTestComponent,
+    SubmenuComponent,
+    HomeComponent,
+  ],
   imports: [
     BrowserModule,
     AppRoutingModule,
