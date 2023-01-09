@@ -25,6 +25,8 @@ https://blog.angular.io/angular-v12-is-now-available-32ed51fbfd49
 deprecating View Engine (in favor of Ivy)
 Nullish Coalescing onm templates
 
+Problemas de types: Slice
+
 ## Angular 13 (Nov 2021):
 
 https://blog.angular.io/angular-v13-is-now-available-cce66f7bc296
