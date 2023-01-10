@@ -4,7 +4,8 @@
   "license": "ISC",
   "scripts": {
     "ng": "ng",
-    "start": "vite"
+    "start": "vite",
+    "build": "vite build"
   },
   "dependencies": {
     "@angular/common": "^15.0.4",
