@@ -2,9 +2,9 @@
   "name": "angular-playground-vite",
   "version": "1.0.0",
   "license": "ISC",
-  "devDependencies": {
-    "typescript": "^4.9.4",
-    "vite": "^4.0.4"
+  "scripts": {
+    "ng": "ng",
+    "start": "vite"
   },
   "dependencies": {
     "@angular/common": "^15.0.4",
@@ -14,5 +14,9 @@
     "@angular/router": "^15.0.4",
     "rxjs": "^7.8.0",
     "zone.js": "^0.12.0"
+  },
+  "devDependencies": {
+    "typescript": "^4.9.4",
+    "vite": "^4.0.4"
   }
 }
