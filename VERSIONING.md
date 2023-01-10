@@ -17,6 +17,7 @@ https://blog.angular.io/version-11-of-angular-now-available-74721b7952f7
 Automatic Inlining of Fonts
 HMR Support
 Webpack 5 experimental
+IgxColumnHidingModule
 
 ## Angular 12 (May 2021):
 

@@ -1,0 +1,12 @@
+<button mat-menu-item [matMenuTriggerFor]="dinoMenu">DinossaursXX</button>
+
+<mat-menu #dinoMenu="matMenu">
+  <ng-template matMenuContent>
+    <button mat-menu-item>
+      <span>T-REX</span>
+    </button>
+    <button mat-menu-item>
+      <span>Velociraptor</span>
+    </button>
+  </ng-template>
+</mat-menu>
