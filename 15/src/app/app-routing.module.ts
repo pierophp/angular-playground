@@ -11,6 +11,7 @@ const routes: Routes = [
   },
   { path: 'progress', component: ProgressTestComponent },
   { path: 'submenu', component: SubmenuComponent },
+  { path: 'contact', loadChildren: () => import('./contact/contact.module').then(m => m.ContactModule) },
 ];
 
 @NgModule({
