@@ -6,10 +6,7 @@ import { SubmenuComponent } from './submenu/submenu.component';
 const routes: Routes = [
   {
     path: '',
-    loadChildren: () =>
-      /* webpackChunkName: "home" */ import('./home/home.module').then(
-        (m) => m.HomeModule
-      ),
+    loadChildren: () => './home/home.module'.then((m) => m.HomeModule),
     pathMatch: 'full',
   },
   { path: 'progress', component: ProgressTestComponent },
@@ -17,9 +14,7 @@ const routes: Routes = [
   {
     path: 'contact',
     loadChildren: () =>
-      /* webpackChunkName: "contact" */ import('./contact/contact.module').then(
-        (m) => m.ContactModule
-      ),
+      import('./contact/contact.module').then((m) => m.ContactModule),
   },
 ];
 
