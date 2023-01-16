@@ -7,18 +7,30 @@ import { MatCardModule } from '@angular/material/card';
 import { MatDividerModule } from '@angular/material/divider';
 import { MatMenuModule } from '@angular/material/menu';
 import { MatProgressBarModule } from '@angular/material/progress-bar';
+import { MatRadioModule } from '@angular/material/radio';
 import { SubmenuComponent } from './submenu/submenu.component';
 import { HomeComponent } from './home/home.component';
 import { MenuDinosComponent } from './menu-dinos/menu-dinos.component';
+import { FormsComponent } from './forms/forms.component';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
-  declarations: [AppComponent, SubmenuComponent, HomeComponent, MenuDinosComponent],
+  declarations: [
+    AppComponent,
+    SubmenuComponent,
+    HomeComponent,
+    MenuDinosComponent,
+    FormsComponent,
+  ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
+    FormsModule,
+    ReactiveFormsModule,
     MatCardModule,
     MatDividerModule,
+    MatRadioModule,
     MatMenuModule,
     MatProgressBarModule,
   ],
