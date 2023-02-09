@@ -28,7 +28,7 @@
             "inlineStyleLanguage": "scss",
             "assets": ["src/favicon.ico", "src/assets"],
             "styles": ["src/styles.scss"],
-            "scripts": [ "./node_modules/hammerjs/hammer.min.js"]
+            "scripts": ["./node_modules/hammerjs/hammer.min.js"]
           },
           "configurations": {
             "production": {
@@ -36,7 +36,7 @@
                 {
                   "type": "initial",
                   "maximumWarning": "500kb",
-                  "maximumError": "1mb"
+                  "maximumError": "3mb"
                 },
                 {
                   "type": "anyComponentStyle",
@@ -94,7 +94,7 @@
             "inlineStyleLanguage": "scss",
             "assets": ["src/favicon.ico", "src/assets"],
             "styles": ["src/styles.scss"],
-            "scripts": [ "./node_modules/hammerjs/hammer.min.js"]
+            "scripts": ["./node_modules/hammerjs/hammer.min.js"]
           }
         }
       }

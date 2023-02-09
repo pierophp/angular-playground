@@ -28,6 +28,8 @@ Nullish Coalescing onm templates
 
 Problemas de types: Slice
 
+yarn build is now production by default
+
 ## Angular 13 (Nov 2021):
 
 https://blog.angular.io/angular-v13-is-now-available-cce66f7bc296
