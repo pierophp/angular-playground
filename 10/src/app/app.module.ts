@@ -14,7 +14,11 @@ import { MenuDinosComponent } from './menu-dinos/menu-dinos.component';
 import { FormsComponent } from './forms/forms.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { GridComponent } from './grid/grid.component';
-import { IgxGridModule, IgxTreeGridModule } from 'igniteui-angular';
+import {
+  IgxGridModule,
+  IgxTreeGridModule,
+  IgxHierarchicalGridModule,
+} from 'igniteui-angular';
 
 @NgModule({
   declarations: [
@@ -37,6 +41,7 @@ import { IgxGridModule, IgxTreeGridModule } from 'igniteui-angular';
     MatMenuModule,
     MatProgressBarModule,
     IgxGridModule,
+    IgxHierarchicalGridModule,
     IgxTreeGridModule,
   ],
   providers: [],

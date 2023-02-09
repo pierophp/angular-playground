@@ -8,19 +8,27 @@ import { MatMenuModule } from '@angular/material/menu';
 import { MatProgressBarModule } from '@angular/material/progress-bar';
 import { ProgressTestComponent } from './progress-test/progress-test.component';
 import { SubmenuComponent } from './submenu/submenu.component';
+import { IgxGridModule, IgxHierarchicalGridModule } from 'igniteui-angular';
+import { GridComponent } from './grid/grid.component';
 
 @NgModule({
-	declarations: [AppComponent, ProgressTestComponent, SubmenuComponent],
-	imports: [
-		BrowserModule,
-		AppRoutingModule,
-		BrowserAnimationsModule,
-		MatCardModule,
-		MatMenuModule,
-		MatProgressBarModule
-	],
-	providers: [],
-	bootstrap: [AppComponent],
+  declarations: [
+    AppComponent,
+    ProgressTestComponent,
+    SubmenuComponent,
+    GridComponent,
+  ],
+  imports: [
+    BrowserModule,
+    AppRoutingModule,
+    BrowserAnimationsModule,
+    MatCardModule,
+    MatMenuModule,
+    MatProgressBarModule,
+    IgxGridModule,
+    IgxHierarchicalGridModule,
+  ],
+  providers: [],
+  bootstrap: [AppComponent],
 })
-export class AppModule {
-}
+export class AppModule {}

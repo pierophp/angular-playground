@@ -33,8 +33,6 @@ export class GridComponent implements OnInit {
   ngOnInit(): void {}
 
   onGridCreated(e: IGridCreatedEventArgs) {
-    console.log(e.grid.transactions);
-
     e.grid.isLoading = true;
     e.grid.data = [
       {

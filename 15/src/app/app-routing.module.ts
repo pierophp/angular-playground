@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { PreloadAllModules, RouterModule, Routes } from '@angular/router';
+import { GridComponent } from './grid/grid.component';
 import { ProgressTestComponent } from './progress-test/progress-test.component';
 import { SubmenuComponent } from './submenu/submenu.component';
 
@@ -16,6 +17,7 @@ const routes: Routes = [
     loadChildren: () =>
       import('./contact/contact.module').then((m) => m.ContactModule),
   },
+  { path: 'grid', component: GridComponent },
 ];
 
 @NgModule({

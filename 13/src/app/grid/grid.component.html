@@ -1,49 +1,4 @@
 <div class="grid__wrapper">
-  <!-- <igx-grid
-    [data]="localData"
-    childDataKey="Employees"
-    width="100%"
-    height="800px"
-    [autoGenerate]="false"
-    [allowFiltering]="true"
-  >
-    <igx-paginator></igx-paginator>
-    <igx-column-layout>
-      <igx-column
-        field="Name"
-        dataType="string"
-        [sortable]="true"
-        [editable]="true"
-        [resizable]="true"
-        [hasSummary]="true"
-        [rowStart]="1"
-        [colStart]="1"
-        [colEnd]="1"
-      ></igx-column>
-      <igx-column
-        field="LastName"
-        dataType="string"
-        [sortable]="true"
-        [editable]="true"
-        [resizable]="true"
-        [hasSummary]="true"
-        [rowStart]="1"
-        [colStart]="2"
-        [colEnd]="2"
-      ></igx-column>
-      <igx-column
-        field="Age"
-        dataType="number"
-        [sortable]="true"
-        [editable]="true"
-        [resizable]="true"
-        [rowStart]="2"
-        [colStart]="1"
-        [colEnd]="3"
-      ></igx-column>
-    </igx-column-layout>
-  </igx-grid> -->
-
   <igx-hierarchical-grid
     class="hierarchicalGrid"
     [data]="localData"
@@ -78,7 +33,6 @@
     ></igx-column>
 
     <igx-row-island
-      [height]="null"
       [autoGenerate]="true"
       (onGridCreated)="onGridCreated($event)"
       [primaryKey]="'Name'"
