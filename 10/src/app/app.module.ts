@@ -13,6 +13,8 @@ import { HomeComponent } from './home/home.component';
 import { MenuDinosComponent } from './menu-dinos/menu-dinos.component';
 import { FormsComponent } from './forms/forms.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { GridComponent } from './grid/grid.component';
+import { IgxGridModule, IgxTreeGridModule } from 'igniteui-angular';
 
 @NgModule({
   declarations: [
@@ -21,6 +23,7 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
     HomeComponent,
     MenuDinosComponent,
     FormsComponent,
+    GridComponent,
   ],
   imports: [
     BrowserModule,
@@ -33,6 +36,8 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
     MatRadioModule,
     MatMenuModule,
     MatProgressBarModule,
+    IgxGridModule,
+    IgxTreeGridModule,
   ],
   providers: [],
   bootstrap: [AppComponent],

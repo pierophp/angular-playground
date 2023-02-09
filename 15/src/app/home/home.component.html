@@ -1,5 +1,11 @@
 <div>
-  <a href="/progress">Progress</a>
-  <a href="/submenu">Submenu</a>
-  <a href="/contact">Contact</a>
+  <ul>
+    <li>
+      <a href="/submenu">Submenu</a>
+    </li>
+    <li>
+      <a href="/contact">Contact</a>
+    </li>
+  </ul>
+  {{ value | slice : 0 : 2 | uppercase }}{{ value | slice : 2 }}
 </div>

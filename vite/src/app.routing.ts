@@ -1,4 +1,5 @@
 import { Route, provideRouter } from '@angular/router';
+
 const routes: Route[] = [
   {
     path: '',
