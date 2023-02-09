@@ -10,16 +10,17 @@ import { ProgressTestComponent } from './progress-test/progress-test.component';
 import { SubmenuComponent } from './submenu/submenu.component';
 
 @NgModule({
-  declarations: [AppComponent, ProgressTestComponent, SubmenuComponent],
-  imports: [
-    BrowserModule,
-    AppRoutingModule,
-    BrowserAnimationsModule,
-    MatCardModule,
-    MatMenuModule,
-    MatProgressBarModule,
-  ],
-  providers: [],
-  bootstrap: [AppComponent],
+	declarations: [AppComponent, ProgressTestComponent, SubmenuComponent],
+	imports: [
+		BrowserModule,
+		AppRoutingModule,
+		BrowserAnimationsModule,
+		MatCardModule,
+		MatMenuModule,
+		MatProgressBarModule
+	],
+	providers: [],
+	bootstrap: [AppComponent],
 })
-export class AppModule {}
+export class AppModule {
+}
