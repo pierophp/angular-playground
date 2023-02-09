@@ -1,7 +1,7 @@
 From:
 
 ```json
-"builder": "@angular-devkit/build-angular:dev-server",
+"builder": "@angular-devkit/build-angular:browser",
 ```
 
 To:
