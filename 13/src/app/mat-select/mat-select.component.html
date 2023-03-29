@@ -1,0 +1,8 @@
+Select:
+<mat-select [formControl]="toolbarSelectControl">
+    <mat-option *ngFor="let option of options" [value]="option.value" [hidden]="option.hidden">
+        {{ option?.label }}
+    </mat-option>
+</mat-select>
+
+<button (click)="change()">Change</button>
