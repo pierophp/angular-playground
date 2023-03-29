@@ -8,6 +8,7 @@ import { MatDividerModule } from '@angular/material/divider';
 import { MatMenuModule } from '@angular/material/menu';
 import { MatProgressBarModule } from '@angular/material/progress-bar';
 import { MatRadioModule } from '@angular/material/radio';
+import { MatSelectModule } from '@angular/material/select';
 import { SubmenuComponent } from './submenu/submenu.component';
 import { HomeComponent } from './home/home.component';
 import { MenuDinosComponent } from './menu-dinos/menu-dinos.component';
@@ -19,6 +20,7 @@ import {
   IgxTreeGridModule,
   IgxHierarchicalGridModule,
 } from 'igniteui-angular';
+import { MatSelectComponent } from './mat-select/mat-select.component';
 
 @NgModule({
   declarations: [
@@ -28,6 +30,7 @@ import {
     MenuDinosComponent,
     FormsComponent,
     GridComponent,
+    MatSelectComponent,
   ],
   imports: [
     BrowserModule,
@@ -35,6 +38,7 @@ import {
     BrowserAnimationsModule,
     FormsModule,
     ReactiveFormsModule,
+    MatSelectModule,
     MatCardModule,
     MatDividerModule,
     MatRadioModule,
@@ -47,4 +51,4 @@ import {
   providers: [],
   bootstrap: [AppComponent],
 })
-export class AppModule {}
+export class AppModule { }
