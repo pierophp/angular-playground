@@ -1,4 +1,4 @@
 ```
-ng generate component grid
-ng generate module grid --routing
+yarn ng generate component grid
+yarn ng generate module grid --routing
 ```

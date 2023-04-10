@@ -1,5 +1,6 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, ViewChild } from '@angular/core';
 import { FormControl } from '@angular/forms';
+import { MatSelect } from '@angular/material/select';
 import { IFormControl } from '@rxweb/types';
 
 @Component({
@@ -8,6 +9,7 @@ import { IFormControl } from '@rxweb/types';
   styleUrls: ['./mat-select.component.scss']
 })
 export class MatSelectComponent implements OnInit {
+  @ViewChild(MatSelect) toolbarMatSelect: MatSelect;
 
   constructor() { }
 
@@ -30,7 +32,8 @@ export class MatSelectComponent implements OnInit {
   getRandomNumber = () => Math.floor(Math.random() * 5);
 
   change() {
-    this.toolbarSelectControl.setValue(this.getRandomNumber());
+    // this.toolbarSelectControl.setValue(this.getRandomNumber());
+    this.toolbarMatSelect.writeValue(this.getRandomNumber())
   }
 
 }

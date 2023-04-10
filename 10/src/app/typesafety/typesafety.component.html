@@ -1,0 +1,13 @@
+<ng-container [ngTemplateOutlet]="hasItems" [ngTemplateOutletContext]="{ items: items }">
+</ng-container>
+
+<ng-template #hasItems let-items="items">
+    <div>Has Items</div>
+    <div *ngFor="let item of items">
+        {{ item.name }}
+    </div>
+</ng-template>
+
+<ng-template #noItems>
+    <div>No Items</div>
+</ng-template>

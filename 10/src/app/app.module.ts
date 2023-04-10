@@ -21,6 +21,7 @@ import {
   IgxHierarchicalGridModule,
 } from 'igniteui-angular';
 import { MatSelectComponent } from './mat-select/mat-select.component';
+import { TypesafetyComponent } from './typesafety/typesafety.component';
 
 @NgModule({
   declarations: [
@@ -31,6 +32,7 @@ import { MatSelectComponent } from './mat-select/mat-select.component';
     FormsComponent,
     GridComponent,
     MatSelectComponent,
+    TypesafetyComponent,
   ],
   imports: [
     BrowserModule,

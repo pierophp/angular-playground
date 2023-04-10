@@ -10,6 +10,7 @@ import { ProgressTestComponent } from './progress-test/progress-test.component';
 import { SubmenuComponent } from './submenu/submenu.component';
 import { IgxGridModule, IgxHierarchicalGridModule } from 'igniteui-angular';
 import { GridComponent } from './grid/grid.component';
+import { TypesafetyComponent } from './typesafety/typesafety.component';
 
 @NgModule({
   declarations: [
@@ -17,6 +18,7 @@ import { GridComponent } from './grid/grid.component';
     ProgressTestComponent,
     SubmenuComponent,
     GridComponent,
+    TypesafetyComponent,
   ],
   imports: [
     BrowserModule,

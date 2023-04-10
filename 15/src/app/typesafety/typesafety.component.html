@@ -1,0 +1,18 @@
+<ng-container [ngTemplateOutlet]="insideTemplate" [ngTemplateOutletContext]="{ items: items }">
+</ng-container>
+
+See this <a href="https://github.com/angular/angular/issues/28731" target="_blank">issue</a>.
+
+<ng-template #insideTemplate let-items="items">
+    <h2>Inside NgTemplate With "let-items" - No Type Safety</h2>
+    <div *ngFor="let item of items">
+        {{ item.name2 }}
+    </div>
+</ng-template>
+
+<div>
+    <h2>Direct on Template - With Type Safety</h2>
+    <div *ngFor="let item of items">
+        {{ item.name2 }}
+    </div>
+</div>
