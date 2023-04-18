@@ -11,6 +11,7 @@ import { SubmenuComponent } from './submenu/submenu.component';
 import { IgxGridModule, IgxHierarchicalGridModule } from 'igniteui-angular';
 import { GridComponent } from './grid/grid.component';
 import { TypesafetyComponent } from './typesafety/typesafety.component';
+import { NgAsModule } from 'ng-as';
 
 @NgModule({
   declarations: [
@@ -29,8 +30,9 @@ import { TypesafetyComponent } from './typesafety/typesafety.component';
     MatProgressBarModule,
     IgxGridModule,
     IgxHierarchicalGridModule,
+    NgAsModule,
   ],
   providers: [],
   bootstrap: [AppComponent],
 })
-export class AppModule {}
+export class AppModule { }

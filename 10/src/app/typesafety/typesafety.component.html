@@ -8,6 +8,18 @@
     </div>
 </ng-template>
 
-<ng-template #noItems>
-    <div>No Items</div>
-</ng-template>
+<div>
+    <h2>Direct on Template - With Type Safety</h2>
+    <div *ngFor="let item of items">
+        {{ item.name }}
+    </div>
+</div>
+
+<ng-container *ngIf="items$|async as itemsX">
+    <div>
+        <h2>Async Pipe</h2>
+        <div *ngFor="let item of itemsX">
+            {{ item.name2 }}
+        </div>
+    </div>
+</ng-container>
